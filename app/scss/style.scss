@@ -1,0 +1,16 @@
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container{
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@import 'reset';
+@import 'header';
+@import 'buttons';
+@import 'media';
+@import 'form';
+
