@@ -1,13 +1,6 @@
-
-  $('.carousel__inner').slick({
-    
-  });
-
-
-
-
-// $('.carousel__inner').slick({
-//    dots: true,
-//    adaptiveHeight: true
-// });
+$('.carousel__inner').slick({
+    spped: 1200,
+    adaptiveHeight: true,
+    autoplay: true,
+   });
 
