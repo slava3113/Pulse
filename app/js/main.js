@@ -21,13 +21,30 @@ $(function () {
 
     $('.carousel__inner').slick({
         spped: 2200,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                dots: true,
-                arrow: false
+        dots: false,
+        
+          responsive: [{
+             breakpoint: 480,
+             settings: {
+               dots: false,
+               arrow: false,
             }
-        }]
+     }]
     });
+    
+    //modal
+    $('[data-modal=consultation]').on('click', function(){
+          $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+    
 
+    $('.button_mini').each(function(i) {
+       $(this).on('click', function() {
+           $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+           $('.overlay, #order').fadeIn('slow');
+       })
+    });
 });

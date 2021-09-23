@@ -53,7 +53,22 @@
     margin: 0 auto;
     margin-top: 20px;
   }
-
-  
+  .catalog{
+    padding: 50px;
+  }
+  .catalog__tabs{
+    display: block;
+  }
+  .catalog__tab{
+    margin-top: 15px;
+  }
+  .reviews__item{
+    display: block;
+    
+  }
+  .reviews__img{
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 
 }
