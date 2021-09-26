@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulse</title>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <section class="promo">
+  <section id="up" class="promo">
     <div class="container">
       <header class="header">
         <a class="header__logo" href="#">
@@ -90,10 +92,10 @@
         Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут
       </div>
 
-      <form class="feed-form" action="#">
-        <input name="name" required placeholder="Ваше имя" type="text">
-        <input name="phone" required placeholder="Ваш телефон" type="number">
-        <input name="email" required placeholder="Ваш E-mail" type="email">
+      <form id="consultation-form"  class="feed-form" action="#">
+        <input name="name"  placeholder="Ваше имя" type="text">
+        <input name="phone"  placeholder="Ваш телефон" type="number">
+        <input name="email"  placeholder="Ваш E-mail" type="email">
         <button class="button button_submit">заказать консультацию</button>
       </form>
     </div>
@@ -433,9 +435,9 @@
   <section class="reviews">
     <div class="container">
       <div class="title">отзывы клиентов</div>
+     
 
-
-      <div class="reviews__item">
+      <div class=" reviews__item  animate__animated animate__backInDown animate__slower	3s animate__repeat-2" >
         <img class="reviews__img" src="img/reviews/photo_1.svg" alt="vomen">
         <div class="reviews__text">
           <div class="reviews__subtitle">Ирина Иванченко</div>
@@ -452,7 +454,7 @@
         </div>
       </div>
 
-      <div class="reviews__item">
+      <div class=" reviews__item animate__animated animate__backInLeft animate__slower	4s animate__repeat-2">
         <img class="reviews__img" src="img/reviews/photo_3.svg" alt="vomen">
         <div class="reviews__text">
           <div class="reviews__subtitle">Юлия Дашкина</div>
@@ -469,7 +471,7 @@
         </div>
       </div>
 
-      <div class="reviews__item">
+      <div class=" reviews__item  animate__animated animate__backInUp animate__slower	5s animate__repeat-2">
         <img class="reviews__img" src="img/reviews/photo_2.svg" alt="men">
         <div class="reviews__text">
           <div class="reviews__subtitle">Иван Сёмочкин</div>
@@ -511,9 +513,9 @@
       <div class="modal__subtitle">Просто заполните форму заявки</div>
       <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed-form" action="#">
-        <input name="name" required placeholder="Ваше имя" type="text">
-        <input name="phone" required placeholder="Ваш телефон" type="number">
-        <input name="email" required placeholder="Ваш E-mail" type="email">
+        <input name="name"  placeholder="Ваше имя" type="text">
+        <input name="phone"  placeholder="Ваш телефон" type="number">
+        <input name="email"  placeholder="Ваш E-mail" type="email">
         <button class="button button_submit">заказать консультацию</button>
       </form>
     </div>
@@ -523,9 +525,9 @@
       <div class="modal__subtitle">Ваш заказ:</div>
       <div class="modal__descr">Пульсометр Polar FT1</div>
       <form class="feed-form" action="#">
-        <input name="name" required placeholder="Ваше имя" type="text">
-        <input name="phone" required placeholder="Ваш телефон" type="number">
-        <input name="email" required placeholder="Ваш E-mail" type="email">
+        <input name="name"  placeholder="Ваше имя" type="text">
+        <input name="phone"  placeholder="Ваш телефон" type="number">
+        <input name="email"  placeholder="Ваш E-mail" type="email">
         <button class="button button_submit">Купить</button>
       </form>
     </div>
@@ -538,10 +540,16 @@
   </div>
 
 
+  <a class="arrowUp" href="#up">
+    <img  src="img/cart/down.svg" alt="down">
+  </a>
+  
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
-
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
